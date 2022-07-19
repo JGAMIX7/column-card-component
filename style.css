@@ -44,6 +44,7 @@ body{
    display: flex;
    flex-direction: column;
    padding: 50px;
+   /* padding-right: 0; */
 }
 
 .card-wrapper .card.card-sedans{
@@ -58,7 +59,7 @@ body{
 
 .card-wrapper .card .card-icon{
    width: 50px;
-   margin-bottom: 35px;
+   margin-bottom: 30px;
 }
 
 .card-wrapper .card .card-title{
@@ -78,9 +79,14 @@ body{
 }
 
 .card-wrapper .card .card-btn{
-   display: min-content;
+   display: inline-block;
    padding: 15px 20px;
    font-size: 0.95rem;
-   color: ;
+   color: inherit;
    background-color: var(--very-light-gray);
+   border: 2px solid var(--very-light-gray);
+   border-radius: 30px;
+   letter-spacing: 1px;
+   cursor: pointer;
+   width: 100%;
 }
