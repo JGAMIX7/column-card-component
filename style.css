@@ -4,13 +4,12 @@
 font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif; */
 
-/* - Font size: 15px */
 
 :root{
    --bright-orange: hsl(31, 77%, 52%);
    --dark-cyan: hsl(184, 100%, 22%);
    --very-dark-cyan: hsl(179, 100%, 13%);
-   --ransparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+   --transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons) */
 }
 
@@ -18,4 +17,70 @@ font-family: 'Lexend Deca', sans-serif; */
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+}
+
+body{
+   background-color: var(--very-light-gray);
+   font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.container .card-wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   border-radius: 10px;
+   overflow: hidden;
+   margin: 10px;
+}
+
+.card-wrapper .card{
+   max-width: 320px;
+   display: flex;
+   flex-direction: column;
+   padding: 50px;
+}
+
+.card-wrapper .card.card-sedans{
+   background-color: var(--bright-orange);
+}
+.card-wrapper .card.card-suvs{
+   background-color: var(--dark-cyan);
+}
+.card-wrapper .card.card-luxury{
+   background-color: var(--very-dark-cyan);
+}
+
+.card-wrapper .card .card-icon{
+   width: 50px;
+   margin-bottom: 35px;
+}
+
+.card-wrapper .card .card-title{
+   font-family: 'Big Shoulders Display', sans-serif;
+   font-size: 2.25rem;
+   color: var(--very-light-gray);
+   text-transform: uppercase;
+}
+
+.card-wrapper .card .card-description{
+   font-size: 0.95rem;
+   color: var(--transparent-white);
+   letter-spacing: 1px;
+   line-height: 1.5;
+   padding-right: 40px;
+   margin: 30px 0 100px;
+}
+
+.card-wrapper .card .card-btn{
+   display: min-content;
+   padding: 15px 20px;
+   font-size: 0.95rem;
+   color: ;
+   background-color: var(--very-light-gray);
 }
