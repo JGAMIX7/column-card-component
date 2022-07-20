@@ -21,6 +21,11 @@ font-family: 'Lexend Deca', sans-serif; */
 
 body{
    background-color: var(--very-light-gray);
+}
+
+p,button{
+   font-size: 0.95rem;
+   letter-spacing: 1px;
    font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -29,22 +34,22 @@ body{
    justify-content: center;
    align-items: center;
    min-height: 100vh;
+   max-width: 900px;
+   margin: 0 auto;
 }
 
 .container .card-wrapper{
    display: flex;
-   flex-wrap: wrap;
    border-radius: 10px;
    overflow: hidden;
-   margin: 10px;
+   margin: 20px;
 }
 
 .card-wrapper .card{
-   max-width: 320px;
+   max-width: 325px;
    display: flex;
    flex-direction: column;
-   padding: 50px;
-   /* padding-right: 0; */
+   padding: 45px;
 }
 
 .card-wrapper .card.card-sedans{
@@ -58,7 +63,7 @@ body{
 }
 
 .card-wrapper .card .card-icon{
-   width: 50px;
+   width: 60px;
    margin-bottom: 30px;
 }
 
@@ -70,23 +75,45 @@ body{
 }
 
 .card-wrapper .card .card-description{
-   font-size: 0.95rem;
    color: var(--transparent-white);
-   letter-spacing: 1px;
-   line-height: 1.5;
-   padding-right: 40px;
-   margin: 30px 0 100px;
+   line-height: 1.6;
+   margin: 30px 0 70px;
 }
 
 .card-wrapper .card .card-btn{
-   display: inline-block;
-   padding: 15px 20px;
-   font-size: 0.95rem;
-   color: inherit;
+   width: max-content;
    background-color: var(--very-light-gray);
    border: 2px solid var(--very-light-gray);
    border-radius: 30px;
-   letter-spacing: 1px;
+   padding: 12px 25px;
    cursor: pointer;
-   width: 100%;
+   transition: all .3s ease-in-out;
+}
+
+.card-wrapper .card .btn-sedans{
+   color: var(--bright-orange);
+}
+.card-wrapper .card .btn-suvs{
+   color: var(--dark-cyan);
+}
+.card-wrapper .card .btn-luxury{
+   color: var(--very-dark-cyan);
+}
+
+.card-wrapper .card .card-btn:hover{
+   background-color: transparent;
+   color: var(--transparent-white);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:768px) {
+   .card-wrapper{
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width:425px) {
+   .card-wrapper{
+      flex-direction: column;
+   }
 }
