@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-:root{
+:root {
    --bright-orange: hsl(31, 77%, 52%);
    --dark-cyan: hsl(184, 100%, 22%);
    --very-dark-cyan: hsl(179, 100%, 13%);
@@ -9,28 +9,28 @@
    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons) */
 }
 
-*,::before,::after{
+*,::before,::after {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
 }
 
-body{
+body {
    background-color: var(--very-light-gray);
 }
 
-h1{
+h1 {
    font-family: 'Big Shoulders Display', sans-serif;
    font-size: 2.25rem;
 }
 
-p,button{
+p,button {
    font-size: 0.95rem;
    letter-spacing: 1px;
    font-family: 'Lexend Deca', sans-serif;
 }
 
-.container{
+.container {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -39,14 +39,14 @@ p,button{
    margin: 0 auto;
 }
 
-.container .card-wrapper{
+.container .card-wrapper {
    display: flex;
    border-radius: 10px;
    overflow: hidden;
    margin: 20px;
 }
 
-.card-wrapper .card{
+.card-wrapper .card {
    max-width: 325px;
    display: flex;
    flex-direction: column;
@@ -54,33 +54,33 @@ p,button{
 }
 
 /* Background color of cards */
-.card-wrapper .card.card-sedans{
+.card-wrapper .card.card-sedans {
    background-color: var(--bright-orange);
 }
-.card-wrapper .card.card-suvs{
+.card-wrapper .card.card-suvs {
    background-color: var(--dark-cyan);
 }
-.card-wrapper .card.card-luxury{
+.card-wrapper .card.card-luxury {
    background-color: var(--very-dark-cyan);
 }
 
-.card-wrapper .card .card-icon{
+.card-wrapper .card .card-icon {
    width: 60px;
    margin-bottom: 30px;
 }
 
-.card-wrapper .card .card-title{
+.card-wrapper .card .card-title {
    text-transform: uppercase;
    color: var(--very-light-gray);
 }
 
-.card-wrapper .card .card-description{
+.card-wrapper .card .card-description {
    color: var(--transparent-white);
    line-height: 1.6;
    margin: 30px 0 70px;
 }
 
-.card-wrapper .card .card-btn{
+.card-wrapper .card .card-btn {
    width: max-content;
    background-color: var(--very-light-gray);
    border: 2px solid var(--very-light-gray);
@@ -91,34 +91,34 @@ p,button{
 }
 
 /* Text collor of buttons */
-.card-wrapper .card .btn-sedans{
+.card-wrapper .card .btn-sedans {
    color: var(--bright-orange);
 }
-.card-wrapper .card .btn-suvs{
+.card-wrapper .card .btn-suvs {
    color: var(--dark-cyan);
 }
-.card-wrapper .card .btn-luxury{
+.card-wrapper .card .btn-luxury {
    color: var(--very-dark-cyan);
 }
 
-.card-wrapper .card .card-btn:hover{
+.card-wrapper .card .card-btn:hover {
    background-color: transparent;
    color: var(--transparent-white);
 }
 
 /* RESPONSIVE */
 @media screen and (max-width:768px) {
-   .card-wrapper{
+   .card-wrapper {
       flex-direction: column;
    }
 
-   .card-wrapper .card .card-description{
+   .card-wrapper .card .card-description {
       margin: 25px 0 45px;
    }
 }
 
 @media screen and (max-width:425px) {
-   .card-wrapper .card .card-description{
+   .card-wrapper .card .card-description {
       margin: 20px 0 30px;
    }
 }
